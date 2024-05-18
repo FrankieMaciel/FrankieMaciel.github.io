@@ -2,12 +2,19 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-family: 'Comic Sans', cursive;
   animation: background-color-change 10s infinite;
   min-height: 100svh;
   display: flex;
   background-image: url("./outro_gato.png");
   background-blend-mode: soft-light;
+}
+
+@font-face {
+  font-family: 'Comic Sans';
+  src: url('COMICSANS.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @keyframes background-color-change {
@@ -52,7 +59,7 @@ p {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
   background-size: 400%;
   -webkit-background-clip: text;
