@@ -1,0 +1,98 @@
+body {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  animation: background-color-change 10s infinite;
+  min-height: 100svh;
+  display: flex;
+  background-image: url("./outro_gato.png");
+  background-blend-mode: soft-light;
+}
+
+@keyframes background-color-change {
+  0% { background-color: #f0f8ff; }
+  25% { background-color: #ffb6c1; }
+  50% { background-color: #87ceeb; }
+  75% { background-color: #ffdab9; }
+  100% { background-color: #f0f8ff; }
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  z-index: 1;
+  width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+      grid-template-columns: 1fr;
+      justify-items: center;
+  }
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.right-content {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+p {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 3em;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow-text 5s infinite linear;
+  margin: auto;
+}
+
+@keyframes rainbow-text {
+  0% { background-position: 0%; }
+  100% { background-position: 100%; }
+}
+
+.cat-container {
+  margin-top: 20px;
+}
+
+.rotating-cat {
+  width: 300px;
+  animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: pink;
+  /* pointer-events: none; */
+  z-index: -1;
+  /* overflow: hidden; */
+}
+
+pre {
+  font-size: 10vh;
+  position: absolute;
+}
