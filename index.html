@@ -1,25 +1,132 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Aniversário Robs</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fontlibrary.org//face/comic-sans" type="text/css"/>
+    <link rel="stylesheet" href="style.css"> 
+    <title>tully desenhos</title>
 </head>
 <body>
-    <div class="main-content">
-        <div class="left-content">
-            <h1>Feliz Aniversário Robs</h1>
-            <div class="cat-container">
-                <img src="gato-com-chapeu.png" alt="Gato com Chapéu de Aniversário" class="rotating-cat">
+    <div id="all">
+    <div>
+        <h1>tully desenhos</h1>
+        <div id="dialog">
+            <div class="centerDiv">
+                <img src="./la_creatura.png" id="creatura" class="flip-image">
             </div>
-        </div>
-        <div class="right-content">
-            <p>Oi Robs, feliz aniversário atrasado, fiz esse site estático pra não deixar seu aniversário passar em branco, mas não se preocupe, mesmo o site sendo estático eu deixei esse gato rotativo para ter uma pouco de dinamismo. Enfim, espero que tenha ganhado muitos presentes e que tenha muitos anos de vida, fica esperto ein :)
-              <br><br>
-              De coração, Frankie.</p>
+            <p class="dialog-text" id="tullySpeak"></p>
         </div>
     </div>
+    <div>
+        <h2>Alguns links relevantes</h2>
+        <a href="https://bsky.app/profile/tullydesenhos.bsky.social">Meu BlueSky</a>.
+        <p>Por enquanto é só isso mesmo</p>
+    </div>
+    <h2>Mural</h2>
+    <div id="art-grid" class="grid">
+    </div>
+    <h2>Preços</h2>
+    <div id="pricesArea">
+    <div id="priceTables">
+
+        <!-- Sticker -->
+        <div class="centerTableDiv">
+            <table>
+                <caption>Sticker</caption>
+                <thead>
+                    <tr>
+                        <th>Shaded</th>
+                        <th>+ 1 OC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>R$ 15</td>
+                        <td>+ R$ 5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Half Body -->
+        <div class="centerTableDiv">
+            <table>
+                <caption>Half Body</caption>
+                <thead>
+                    <tr>
+                        <th>Line</th>
+                        <th>Color</th>
+                        <th>Shaded</th>
+                        <th>+ 1 OC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>R$ 50</td>
+                        <td>R$ 60</td>
+                        <td>R$ 70</td>
+                        <td>+ R$ 30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Full Body -->
+        <div class="centerTableDiv">
+            <table>
+                <caption>Full Body</caption>
+                <thead>
+                    <tr>
+                        <th>Line</th>
+                        <th>Color</th>
+                        <th>Shaded</th>
+                        <th>+ 1 OC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>R$ 70</td>
+                        <td>R$ 85</td>
+                        <td>R$ 100</td>
+                        <td>+ R$ 50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Referência -->
+        <div class="centerTableDiv">
+            <table>
+                <caption>Referência</caption>
+                <thead>
+                    <tr>
+                        <th>Preço</th>
+                        <th>Adicionais</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>R$ 125</td>
+                        <td>
+                            Pose: R$ 50<br>
+                            Arma: R$ 30<br>
+                            Com/Sem roupa: R$ 30<br>
+                            NSFW/SFW: R$ 20
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+    <img id="tullypreço" src="./preço.png">
+    </div>
+    </div>    
+<footer class="footer">
+    <p>Ficou com dúvidas? fale comigo!</p>
+    <a href="https://t.me/seu_telegram" target="_blank">Meu telegram</a> | 
+    <a href="https://discord.gg/seu_convite" target="_blank">Meu discord</a>
+</footer>
 </body>
+    <script src="./main.js"></script>
 </html>

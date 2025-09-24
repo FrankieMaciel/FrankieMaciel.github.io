@@ -1,0 +1,203 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding-bottom: 3%;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.art_img {
+    border-radius: 3%;
+}
+
+#dialog {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+body {
+    margin: 0;
+}
+
+#all {
+    padding-inline: 5vw;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    text-wrap: nowrap;
+}
+
+#priceTables {
+    display: block;
+    justify-content: center;
+    width: 50%;
+    gap: 1%;
+}
+
+#pricesArea {
+    width: 100%;
+    display: flex;
+    padding-bottom: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tullypreço {
+    width: calc(20vw + 20rem);
+    margin: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #priceTables {
+        width: 100%;
+    }
+    #pricesArea {
+        width: 100%;
+        display: block;
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #priceTables {
+        width: 100%;
+    }
+    #pricesArea {
+        width: 100%;
+        display: block;
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 550px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #dialog {
+        display: block;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    table {
+        border-collapse: collapse;
+        font-family: sans-serif;
+        font-size: 1rem;
+        width: 100%;
+    }
+    #priceTables {
+        width: 100%;
+    }
+}
+
+#creatura {
+    width: 15rem;
+}
+
+.dialog-text {
+    font-size: large;
+}
+
+.flip-image {
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+h1 {
+    text-align: left;
+    padding-block: 1%;
+}
+h2 {
+    text-align: center;
+}
+
+.centerDiv {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.centerTableDiv {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+caption {
+    padding: 1rem;
+    font-weight: bold;
+}
+
+thead,
+tfoot {
+    background-color: rgb(228 240 245);
+}
+
+thead,
+tfoot {
+    background-color: #ffdc5e;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 1rem 3%;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(220, 220, 220);
+}
+
+tbody > tr:nth-of-type(odd) {
+    background-color: rgb(255, 255, 240);
+}
+
+tfoot th {
+    text-align: right;
+    color: rgb(85, 85, 85);
+}
+
+tfoot td {
+    font-weight: bold;
+    color: rgb(34, 94, 34);
+}
+
+.footer {
+    background: #dedede; /* amarelo pastel */
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+  
+.footer a {
+    color: #000000; /* verde escuro */
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
